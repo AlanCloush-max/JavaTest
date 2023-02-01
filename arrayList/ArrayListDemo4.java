@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayListDemo4 {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();  //不能用int ，要用interger
 
 
         //2. 添加元素
