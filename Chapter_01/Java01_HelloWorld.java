@@ -5,9 +5,8 @@ import java.util.regex.Pattern;
 
 public class Java01_HelloWorld {
     public static void main(String[] args) {
-        String str = "111";
-        boolean flag = isnumchr(str);
-        System.out.println(flag);
+        String str = "11x1";
+        System.out.println(isallNumber(4,str));
     }
 
     public static boolean containsNumber(String str) {
@@ -70,4 +69,19 @@ public class Java01_HelloWorld {
 
 
     }
+
+
+    public static boolean isallNumber(int x, String str) {
+        for (int i = 0; i < x; i++) {
+            if(str.charAt(i) < '0' || str.charAt(i) > '9'){
+                return false;
+
+            }
+
+        }
+        return true;
+
+    }
 }
+
+
